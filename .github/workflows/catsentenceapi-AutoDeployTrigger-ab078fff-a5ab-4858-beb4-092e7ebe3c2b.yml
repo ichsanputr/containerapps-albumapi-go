@@ -36,7 +36,7 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
-          registryUrl: 
+          registryUrl: ichsanazureregistry.azurecr.io
           registryUsername: ${{ secrets.CATSENTENCEAPI_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CATSENTENCEAPI_REGISTRY_PASSWORD }}
           containerAppName: catsentenceapi
