@@ -28,7 +28,7 @@ func main() {
 
 	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, "Access /albums to see the list of albums")
+		fmt.Fprintf(w, "Access /albums to see the list of albums - updated")
 	})
 
 	router.HandleFunc("/albums", album.Get).Methods("GET")
